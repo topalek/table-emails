@@ -1,0 +1,821 @@
+---
+layout: default
+subject: My Email Templates
+---
+
+<row>
+    <columns>
+        <div class="info">
+            <?= Yii::t(
+        'email',
+        'Ви піписувались на цікаві пропозиції із категорії {categoryName}. Ми підготували для Вас підбірку вигідних пропозицій.',
+        ['categoryName' => $categoryName]
+            ) ?>
+        </div>
+    </columns>
+</row>
+<!-- category-top-->
+<row>
+    <columns>
+        <div class="block block-category-top">
+            <h2 class="block-title section-title text-center">
+                <?= Yii::t('email', 'ТОП {categoryName}', ['categoryName' => $categoryName]) ?>
+            </h2>
+            <!-- begin items row -->
+            <row>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="20"></spacer>
+            <!-- begin items row -->
+            <row>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="20"></spacer>
+            <row>
+                <columns>
+                    <div class="btn-wrap">
+                        <a href="<?= $siteUrl . $categoryUrl . ($filterString ? '/' . $filterString : ''); ?>" class="show-all">
+                            <?= Yii::t('email', 'Дивитись все') ?>
+                        </a>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="15"></spacer>
+        </div>
+    </columns>
+</row>
+<!-- category-sale-->
+<row>
+    <columns>
+        <div class="block block-category-sale">
+            <h2 class="block-title section-title text-center">
+                <?= Yii::t('email', '{categoryName} зі знижками', ['categoryName' => $categoryName]) ?>
+            </h2>
+            <!-- begin items row -->
+            <row>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="20"></spacer>
+            <!-- begin items row -->
+            <row>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="20"></spacer>
+            <row>
+                <columns>
+                    <div class="btn-wrap">
+                        <a href="<?= $siteUrl . $categoryUrl . ($filterString ? '/' . $filterString : ''); ?>" class="show-all">
+                            <?= Yii::t('email', 'Дивитись все') ?>
+                        </a>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="15"></spacer>
+        </div>
+    </columns>
+</row>
+<!-- category-other-->
+<row>
+    <columns>
+        <div class="block block-category-other">
+            <h2 class="block-title section-title text-center">
+                <?= Yii::t('email', 'Інші товари з категорії {categoryName}', ['categoryName' => $categoryName]) ?>
+            </h2>
+            <!-- begin items row -->
+            <row>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="20"></spacer>
+            <!-- begin items row -->
+            <row>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+                <columns small="3">
+                    <div class="item">
+                        <row>
+                            <columns>
+                                <div class="img">
+                                    <img src="<?= $item['image'] ?>" alt="" class="img-responsive">
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="title" title="<?= $item['title'] ?>">
+                                    <?= $item['title'] ?>
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="price">
+                                    <?= asMoney($item['price'], '.', '', 0) ?> грн.
+                                </div>
+                            </columns>
+                        </row>
+                        <row>
+                            <columns>
+                                <div class="buy">
+                                    <a href="<?= $siteUrl . $itemUrl; ?>">
+                                        <?= Yii::t('email', 'купити') ?>
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="20"></spacer>
+            <row>
+                <columns>
+                    <div class="btn-wrap">
+                        <a href="<?= $siteUrl . $categoryUrl . ($filterString ? '/' . $filterString : ''); ?>" class="show-all">
+                            <?= Yii::t('email', 'Дивитись все') ?>
+                        </a>
+                    </div>
+                </columns>
+            </row>
+            <spacer size="15"></spacer>
+        </div>
+    </columns>
+</row>
+<!-- block-popular-->
+<row>
+    <columns>
+        <div class="block-popular">
+            <h2 class="block-title section-title text-center">
+                <?= Yii::t('email', 'Популярне') ?>
+            </h2>
+            <!-- begin items row -->
+            <row>
+                <columns small="6">
+                    <div class="item-pop">
+                        <row>
+                            <columns>
+                                <div class="img" title="<?= $item['title'] ?>">
+                                    <a href="<?= $siteUrl . $item['url']; ?>">
+                                        <img src="<?= $siteUrl . $item->mobImgUrl ?>" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                    <spacer size="10"></spacer>
+                </columns>
+                <columns small="6">
+                    <div class="item-pop">
+                        <row>
+                            <columns>
+                                <div class="img" title="<?= $item['title'] ?>">
+                                    <a href="<?= $siteUrl . $item['url']; ?>">
+                                        <img src="<?= $siteUrl . $item->mobImgUrl ?>" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                    <spacer size="10"></spacer>
+                </columns>
+            </row>
+            <spacer size="20"></spacer>
+            <!-- begin items row -->
+            <row>
+                <columns small="6">
+                    <div class="item-pop">
+                        <row>
+                            <columns>
+                                <div class="img" title="<?= $item['title'] ?>">
+                                    <a href="<?= $siteUrl . $item['url']; ?>">
+                                        <img src="<?= $siteUrl . $item->mobImgUrl ?>" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                    <spacer size="10"></spacer>
+                </columns>
+                <columns small="6">
+                    <div class="item-pop">
+                        <row>
+                            <columns>
+                                <div class="img" title="<?= $item['title'] ?>">
+                                    <a href="<?= $siteUrl . $item['url']; ?>">
+                                        <img src="<?= $siteUrl . $item->mobImgUrl ?>" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                    <spacer size="10"></spacer>
+                </columns>
+            </row>
+            <spacer size="20"></spacer>
+
+            <!-- begin items row -->
+            <row>
+                <columns small="6">
+                    <div class="item-pop">
+                        <row>
+                            <columns>
+                                <div class="img" title="<?= $item['title'] ?>">
+                                    <a href="<?= $siteUrl . $item['url']; ?>">
+                                        <img src="<?= $siteUrl . $item->mobImgUrl ?>" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                    <spacer size="10"></spacer>
+                </columns>
+                <columns small="6">
+                    <div class="item-pop">
+                        <row>
+                            <columns>
+                                <div class="img" title="<?= $item['title'] ?>">
+                                    <a href="<?= $siteUrl . $item['url']; ?>">
+                                        <img src="<?= $siteUrl . $item->mobImgUrl ?>" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </columns>
+                        </row>
+                    </div>
+                    <spacer size="10"></spacer>
+                </columns>
+            </row>
+            <spacer size="15"></spacer>
+        </div>
+    </columns>
+</row>
+
+
